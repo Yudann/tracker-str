@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="w-screen m-0 p-0 h-fit overflow-x-hidden overflow-hidden bg-gradient-to-b from-purple-200 via-purple-400 to-purple-200 ">
+        <main className=" w-screen m-0 p-0 h-fit overflow-x-hidden overflow-hidden bg-gradient-to-b from-purple-200 via-purple-400 to-purple-200 ">
           {children}
         </main>
       </body>

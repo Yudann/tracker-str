@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
+import Link from "next/link";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -47,6 +48,12 @@ export default function LoginPage() {
           >
             Login
           </button>
+        </div>
+        <div className="flex justify-center items-center mt-4">
+          <p>Belum Punya Akun? </p>
+          <Link href="/sign-up" className="text-blue-500 ml-2">
+            Daftar
+          </Link>
         </div>
       </div>
     </div>

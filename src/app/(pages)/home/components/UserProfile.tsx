@@ -1,10 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { FaBell, FaUserCircle } from "react-icons/fa";
+import Cookies from "js-cookie";
 
-type UserProfileProps = {
-  username: string;
-};
+export default function UserProfile() {
+  const [username, setUsername] = useState<string | null>(null);
+  const router = useRouter();
 
-export default function UserProfile({ username }: UserProfileProps) {
+  useEffect(() => {
+    // Ambil username dari cookies saat komponen pertama kali dimuat
+    const savedUsername = Cookies.get("username");
+
+    if (savedUsername) {
+      setUsername(savedUsername);
+    } else {
+      // Jika tidak ada username, arahkan ke halaman login
+      router.push("/login");
+    }
+  }, [router]);
+
+  if (!username) {
+    // Menampilkan loading atau sesuatu saat username belum tersedia
+    return <div className="mt-36">Loading...</div>;
+  }
+
   return (
     <div className="w-full px-5">
       <div className="w-full mt-20 py-6 px-5 flex flex-col items-center bg-purple-300/70 rounded-lg shadow-md">

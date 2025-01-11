@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -15,8 +15,10 @@ export default function LoginPage() {
       return;
     }
 
+    // Simpan username di cookies
+    Cookies.set("username", username, { expires: 7 }); // Username disimpan selama 7 hari
     alert("Berhasil login");
-    router.push(`/home?username=${encodeURIComponent(username)}`);
+    router.push("/home"); // Navigasi ke halaman home
   };
 
   return (
@@ -45,12 +47,6 @@ export default function LoginPage() {
           >
             Login
           </button>
-        </div>
-        <div className="flex justify-center items-center mt-4">
-          <p>Belum punya akun? </p>
-          <Link href="/sign-up" className="text-blue-500 ml-2">
-            Daftar
-          </Link>
         </div>
       </div>
     </div>

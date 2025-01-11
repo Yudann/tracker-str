@@ -1,9 +1,12 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   // Pastikan hanya klien yang berinteraksi
   useEffect(() => {
@@ -12,6 +15,12 @@ export default function HamburgerMenu() {
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
+  };
+
+  const handleLogout = () => {
+    // Hapus username dari cookies
+    Cookies.remove("username");
+    router.push("/login");
   };
 
   return (
@@ -88,11 +97,11 @@ export default function HamburgerMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/" onClick={() => setIsOpen(false)}>
+            <button onClick={handleLogout}>
               <span className="bg-red-500 w-full px-4 text-center py-2 rounded-xl block mt-3 hover:bg-red-600">
                 Log out
               </span>
-            </Link>
+            </button>
           </li>
         </ul>
       </div>

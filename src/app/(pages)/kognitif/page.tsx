@@ -7,7 +7,7 @@ import pemahaman from "../../../../public/assets/pemahaman.png";
 
 export default function KognitifPage() {
   return (
-    <div className="w-full h-fit flex flex-col items-center my-8">
+    <div className="w-full h-fit flex flex-col items-center my-16">
       {/* Header Image */}
       <Image
         height={300}

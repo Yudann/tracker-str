@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Activities() {
   return (
     <div className="w-full mt-10 flex flex-col  rounded-lg ">
@@ -6,21 +8,36 @@ export default function Activities() {
       </h2>
       <div className="grid grid-cols-1 gap-6 w-full px-5">
         {/* Button Menu */}
-        <button className="w-full text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300">
+        <Link
+          href="/kognitif"
+          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
           Terapi Kognitif
-        </button>
-        <button className="w-full text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300">
+        </Link>
+        <Link
+          href="/motorik"
+          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
           Terapi Motorik
-        </button>
-        <button className="w-full text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300">
+        </Link>
+        <Link
+          href="/edukasi"
+          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
           Edukasi
-        </button>
-        <button className="w-full text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300">
+        </Link>
+        <Link
+          href="/catatan"
+          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
           Catatan
-        </button>
-        <button className="w-full text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300">
+        </Link>
+        <Link
+          href="/alarm"
+          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
           Alarm
-        </button>
+        </Link>
       </div>
     </div>
   );

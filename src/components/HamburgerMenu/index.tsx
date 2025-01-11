@@ -20,7 +20,7 @@ export default function HamburgerMenu() {
   const handleLogout = () => {
     // Hapus username dari cookies
     Cookies.remove("username");
-    router.push("/login");
+    router.push("/");
   };
 
   return (

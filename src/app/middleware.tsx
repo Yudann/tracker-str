@@ -7,7 +7,7 @@ export function middleware(req: NextRequest) {
 
   // Jika tidak ada username di cookies, arahkan ke halaman login
   if (!username) {
-    return NextResponse.redirect(new URL("/login", req.url));
+    return NextResponse.redirect(new URL("/sign-in", req.url));
   }
 
   // Jika ada username, lanjutkan permintaan

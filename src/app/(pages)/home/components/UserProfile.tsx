@@ -17,13 +17,20 @@ export default function UserProfile() {
       setUsername(savedUsername);
     } else {
       // Jika tidak ada username, arahkan ke halaman login
-      router.push("/login");
+      router.push("/sign-in");
     }
   }, [router]);
 
-  if (!username) {
-    // Menampilkan loading atau sesuatu saat username belum tersedia
-    return <div className="mt-36">Loading...</div>;
+  if (username === null) {
+    // Menampilkan loading saat username belum tersedia
+    return (
+      <div className="w-full px-5">
+        <div className="w-full mt-20 py-6 px-5 flex flex-col items-center bg-purple-300/70 rounded-lg shadow-md">
+          {/* User Profile Section */}
+          <h1 className="p-3">Loading... </h1>
+        </div>
+      </div>
+    );
   }
 
   return (

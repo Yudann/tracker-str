@@ -10,7 +10,7 @@ export default function RecommendationActivity() {
         <div
           className="min-w-[300px] h-48 bg-cover bg-center backdrop-blur-md rounded-lg shadow-lg flex items-end p-4 text-white hover:scale-[1.02] transition-all duration-300"
           style={{
-            backgroundImage: "url('/membaca.png')",
+            backgroundImage: "url('/assets/membaca.png')",
           }}
         >
           <h2 className="text-lg font-semibold">Membaca</h2>
@@ -19,7 +19,7 @@ export default function RecommendationActivity() {
         <div
           className="min-w-[300px] h-48 bg-cover bg-center backdrop-blur-md rounded-lg shadow-lg flex items-end p-4 text-white hover:scale-[1.01] transition-all duration-300"
           style={{
-            backgroundImage: "url('/mendengar.png')",
+            backgroundImage: "url('/assets/mendengar.png')",
           }}
         >
           <h2 className="text-lg font-semibold">Mendengar</h2>
@@ -28,15 +28,15 @@ export default function RecommendationActivity() {
         <div
           className="min-w-[300px] h-48 bg-cover bg-center backdrop-blur-md rounded-lg shadow-lg flex items-end p-4 text-white hover:scale-[1.01] transition-all duration-300"
           style={{
-            backgroundImage: "url('/menalar.png')",
+            backgroundImage: "url('/assets/penalaran.png')",
           }}
         >
-          <h2 className="text-lg font-semibold">Menalar</h2>
+          <h2 className="text-lg font-semibold">Penalaran</h2>
         </div>
         <div
           className="min-w-[300px] h-48 bg-cover bg-center backdrop-blur-md rounded-lg shadow-lg flex items-end p-4 text-white hover:scale-[1.01] transition-all duration-300"
           style={{
-            backgroundImage: "url('/menulis.png')",
+            backgroundImage: "url('/assets/menulis.png')",
           }}
         >
           <h2 className="text-lg font-semibold">Menulis</h2>

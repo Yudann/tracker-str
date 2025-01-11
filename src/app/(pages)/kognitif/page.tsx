@@ -34,7 +34,7 @@ export default function KognitifPage() {
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           <span>Pemahaman</span>
-          <Image src={penalaran} alt="Penalaran" height={250} width={250} />
+          <Image src={penalaran} alt="Penalaran" height={150} width={150} />
         </Link>
 
         {/* Penalaran */}

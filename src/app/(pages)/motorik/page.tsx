@@ -15,7 +15,7 @@ export default function MotorikPage() {
       <Image
         height={300}
         width={300}
-        className="w-full max-w-md px-5"
+        className="w-full max-w-md"
         src={kognitifImage}
         alt="Kognitif Header"
       />

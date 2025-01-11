@@ -16,7 +16,7 @@ export default function LoginPage() {
     }
 
     alert("Berhasil login");
-    router.push("/home");
+    router.push(`/home?username=${encodeURIComponent(username)}`);
   };
 
   return (

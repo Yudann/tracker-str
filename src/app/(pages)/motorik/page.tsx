@@ -4,9 +4,6 @@ import kognitifImage from "../../../../public/assets/header/motorik.png";
 import gerakankaki from "../../../../public/assets/kaki.png";
 import gerakanTangan from "../../../../public/assets/tangan.png";
 import gerakanBadan from "../../../../public/assets/badan.png";
-import berhitung from "../../../../public/assets/berhitung.png";
-import berbicara from "../../../../public/assets/berbicara.png";
-import mengenalWarna from "../../../../public/assets/mengenal-warna.png";
 
 export default function MotorikPage() {
   return (
@@ -59,34 +56,6 @@ export default function MotorikPage() {
             width={150}
           />
           <span>Gerakan Badan</span>
-        </Link>
-
-        <Link
-          href="/motorik/berhitung"
-          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
-        >
-          <span>Berhitung</span>
-          <Image src={berhitung} alt="Berhitung" height={150} width={150} />
-        </Link>
-
-        <Link
-          href="/motorik/berbicara"
-          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
-        >
-          <Image src={berbicara} alt="Berbicara" height={150} width={150} />
-          <span>Berbicara</span>
-        </Link>
-        <Link
-          href="/motorik/mengenal-warna"
-          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
-        >
-          <span>Mengenal Warna</span>
-          <Image
-            src={mengenalWarna}
-            alt="mengenal warna"
-            height={150}
-            width={150}
-          />
         </Link>
       </div>
     </div>

@@ -4,6 +4,9 @@ import kognitifImage from "../../../../public/assets/header/kognitif.png";
 import membaca from "../../../../public/assets/membaca.png";
 import penalaran from "../../../../public/assets/penalaran.png";
 import pemahaman from "../../../../public/assets/pemahaman.png";
+import berhitung from "../../../../public/assets/berhitung.png";
+import berbicara from "../../../../public/assets/berbicara.png";
+import mengenalWarna from "../../../../public/assets/mengenal-warna.png";
 
 export default function KognitifPage() {
   return (
@@ -30,7 +33,7 @@ export default function KognitifPage() {
 
         {/* Pemahaman */}
         <Link
-          href="/pemahaman"
+          href="/kognitif/pemahaman"
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           <span>Pemahaman</span>
@@ -39,11 +42,38 @@ export default function KognitifPage() {
 
         {/* Penalaran */}
         <Link
-          href="/penalaran"
+          href="/kognitif/penalaran"
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           <Image src={pemahaman} alt="Pemahaman" height={150} width={150} />
           <span>Penalaran</span>
+        </Link>
+        <Link
+          href="/kognitif/kognitif/berhitung"
+          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
+          <span>Berhitung</span>
+          <Image src={berhitung} alt="Berhitung" height={150} width={150} />
+        </Link>
+
+        <Link
+          href="/kognitif/berbicara"
+          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
+          <Image src={berbicara} alt="Berbicara" height={150} width={150} />
+          <span>Berbicara</span>
+        </Link>
+        <Link
+          href="/kognitif/mengenal-warna"
+          className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
+        >
+          <span>Mengenal Warna</span>
+          <Image
+            src={mengenalWarna}
+            alt="mengenal warna"
+            height={150}
+            width={150}
+          />
         </Link>
       </div>
     </div>

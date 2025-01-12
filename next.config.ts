@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['img.youtube.com'], // Menambahkan img.youtube.com ke daftar domain yang diperbolehkan
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

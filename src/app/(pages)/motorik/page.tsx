@@ -80,13 +80,13 @@ export default function MotorikPage() {
           href="/motorik/mengenal-warna"
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
+          <span>Mengenal Warna</span>
           <Image
             src={mengenalWarna}
             alt="mengenal warna"
             height={150}
             width={150}
           />
-          <span>Mengenal Warna</span>
         </Link>
       </div>
     </div>

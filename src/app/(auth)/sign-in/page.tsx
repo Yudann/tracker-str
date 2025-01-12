@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../../../../public/assets/logo.png";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -25,7 +27,13 @@ export default function LoginPage() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
       <div className="w-[80%] h-fit flex flex-col justify-center items-center p-8 bg-white rounded-xl shadow-md">
-        <div className="w-[200px] h-[200px] bg-black rounded-full mb-5" />
+        <Image
+          src={logo}
+          alt="logo"
+          height={300}
+          width={300}
+          className="mb-6"
+        />
         <h2 className="py-4 text-xl font-bold">Login</h2>
         <div className="flex flex-col w-full gap-5">
           <input

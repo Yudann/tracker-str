@@ -32,7 +32,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center">
+    <div className="w-full h-screen flex flex-col items-center justify-center my-10">
       <div className="w-[80%] h-fit flex flex-col justify-center items-center p-8 bg-white rounded-xl shadow-md">
         <div className="w-[200px] h-[200px] bg-black rounded-full mb-5" />
         <h2 className="py-4 text-xl font-bold">Daftar</h2>

@@ -6,6 +6,10 @@
   --background: #e9d5ff;
 }
 
+body {
+  background-color: var(--background);
+}
+
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

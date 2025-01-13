@@ -30,13 +30,7 @@ export default function Activities() {
           href="/catatan"
           className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
-          Catatan
-        </Link>
-        <Link
-          href="/alarm"
-          className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
-        >
-          Alarm
+          Catatan & Alarm
         </Link>
       </div>
     </div>

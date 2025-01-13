@@ -12,8 +12,8 @@ type Article = {
 
 const beritaData: Article[] = [
   {
-    url: "https://www.healthline.com/health/stroke-symptoms",
-    title: "Mengenali Gejala Stroke Secara Dini",
+    url: "https://www.healthline.com/health/stroke/managing-spasticity-after-stroke",
+    title: "Cara Mengelola Spastisitas Setelah Stroke",
     thumbnail: "https://picsum.photos/600/350?random=1",
   },
   {

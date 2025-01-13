@@ -34,7 +34,7 @@ export default function KognitifCard({
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-between">
+    <div className="w-full h-full flex flex-col items-center justify-center">
       {/* Konten Dinamis */}
       <div className="w-full h-96 rounded-lg bg-white/60 border-[8px] border-purple-600 flex items-center justify-center">
         {renderContent(currentValue, setCurrentValue)}

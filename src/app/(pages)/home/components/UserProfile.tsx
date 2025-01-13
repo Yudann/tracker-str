@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaBell, FaUserCircle } from "react-icons/fa";
 import Cookies from "js-cookie";
+import Link from "next/link";
 
 export default function UserProfile() {
   const [username, setUsername] = useState<string | null>(null);
   const [greeting, setGreeting] = useState<string>("");
-   // State untuk ucapan
+  // State untuk ucapan
   const router = useRouter();
 
   useEffect(() => {
@@ -67,7 +68,9 @@ export default function UserProfile() {
               <p className="text-sm text-gray-600">How are you today?</p>
             </div>
           </div>
-          <FaBell size={25} />
+          <Link href="/notifikasi">
+            <FaBell size={25} />
+          </Link>
         </div>
       </div>
     </div>

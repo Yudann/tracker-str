@@ -24,7 +24,7 @@ export default function KognitifPage() {
       <div className="grid grid-cols-1 gap-6 w-full max-w-lg px-5 mt-8">
         {/* Membaca */}
         <Link
-          href="/membaca"
+          href="/kognitif/membaca"
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           <Image src={membaca} alt="Membaca" height={150} width={150} />
@@ -49,7 +49,7 @@ export default function KognitifPage() {
           <span>Penalaran</span>
         </Link>
         <Link
-          href="/kognitif/kognitif/berhitung"
+          href="/kognitif/berhitung"
           className="w-full flex items-center justify-between gap-4 text-center text-2xl font-bold text-black px-4 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           <span>Berhitung</span>

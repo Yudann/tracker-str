@@ -27,7 +27,7 @@ export default function Activities() {
           Edukasi
         </Link>
         <Link
-          href="/catatan"
+          href="/catatanAlarm"
           className="w-full text-center text-3xl font-bold text-black py-8 rounded-lg shadow hover:bg-purple-400 transition duration-300"
         >
           Catatan & Alarm
